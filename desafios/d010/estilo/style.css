@@ -32,6 +32,10 @@ body{
     font-family: var(--fonte-padrao);
 }
 
+a{
+    text-decoration: none;
+}
+
 a.externo::after{
     content: '\00a0\1F517';
 }
@@ -156,10 +160,13 @@ aside{
 
 aside ul{
     list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
     columns: 2;
     cursor: pointer;
 }
-
+aside ul li abbr {
+    text-decoration: none;
+}
 aside > h3{
     background-color: var(--cor5);
     color: white;
